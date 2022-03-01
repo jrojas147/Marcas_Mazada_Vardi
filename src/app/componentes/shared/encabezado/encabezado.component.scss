@@ -1,40 +1,37 @@
-@import './../../../../scss/variables';
-@import './../../../../scss/mixins';
+@import "./../../../../scss/variables";
+@import "./../../../../scss/mixins";
 
-.contenedor{
+.contenedor {
   display: grid;
-  grid-template-columns: $margenContenido auto $margenContenido;
+  grid-template-columns: $margenContenido auto 6%;
   grid-template-columns: 5% auto 5%;
-    background-color: $colorSecundario;
-    @include Asmall(){
-        grid-template-columns: $margenContenidoSmall auto $margenContenidoSmall;
-    }
-    @include smallTablet(){
-        grid-template-columns: $margenContenidoSmall auto $margenContenidoSmall;
+  background-color: $colorSecundario;
+  @include Asmall() {
+    grid-template-columns: $margenContenidoSmall auto $margenContenidoSmall;
+  }
+  @include smallTablet() {
+    grid-template-columns: $margenContenidoSmall auto $margenContenidoSmall;
+  }
+
+  .contLogo {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    @include Asmall() {
+      text-align: center;
     }
 
-    .contLogo {
-      padding: 10px 0;
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
+    .logoClienteVardi {
+      align-self: center;
+    }
+    .logoClienteMazda {
+      width: 70px;
+      align-self: center;
+      align-self: center;
+      justify-self: right;
       @include Asmall() {
-        text-align: center;
-      }
-
-      .logoCliente {
-        width: 220px;
-        @include Asmall() {
-          width: 50px;
-        }
-      }
-      .logoSantander {
-        width: 150px;
-        align-self: center;
-        justify-self: right;
-        @include Asmall() {
-          width: 110px;
-        }
+        width: 70px;
       }
     }
-
+  }
 }

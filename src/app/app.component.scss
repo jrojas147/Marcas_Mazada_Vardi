@@ -4,7 +4,7 @@
 .contenedor{
     grid-row: 1;
     grid-column: 1;
-    background-image: url(../assets/img/fondo.jpg);
+    background-image: url(../assets/img/mazdaFondo.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
@@ -21,16 +21,23 @@
     .splash{
         grid-row: 1;
         grid-column: 1;
-        background-color: $colorPrimario;
+        background-color: $colorSecundario;
         height: 100vh;
         z-index: 2;
         display: grid;
         .logoSantanderBlanco{
-          width: 130px;
+          width: 170px;
+        }
+        .logoCliente{
+          width: 150px;
         }
         img{
             align-self: center;
             justify-self: center
         }
     }
+}
+
+.texto{
+  color: white;
 }

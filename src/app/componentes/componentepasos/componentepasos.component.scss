@@ -3,7 +3,7 @@
 
 .contenedor{
     display: grid;
-    grid-template-columns: $margenContenido auto $margenContenido;
+    grid-template-columns: $margenContenidolef auto $margenContenidoref;
     @include Asmall(){
         grid-template-columns: $margenContenidoSmall auto $margenContenidoSmall;
     }

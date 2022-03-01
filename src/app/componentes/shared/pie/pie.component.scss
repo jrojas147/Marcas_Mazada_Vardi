@@ -3,15 +3,33 @@
 
 .container{
     display: grid;
-    grid-template-columns: $margenFooter auto $margenFooter;
+    grid-template-columns: $margenFooterLeft auto $margenFooterRigth;
     padding: 10px 0;
     color: white;
+    // @include full(){
+    //   background-color: antiquewhite;}
+    // }
+    // @include desktopFull(){
+    //   background-color: aqua;
+
+    // }
+    // @include laptopDesktop(){
+    //   background-color: cornsilk;
+
+    // }
+    @include tabletLaptop(){
+      grid-template-columns: 45% auto 30%;
+
+    }
+    @include smallTablet(){
+      grid-template-columns: 100% auto 30%;
+
+    }
     @include Asmall(){
         color: black;
+        grid-template-columns: 100% auto 30%;
     }
-    @include tabletLaptop(){
-        grid-template-columns: $margenContenido auto $margenContenido;
-    }
+
     p{
         font-size: 8px;
         align-self: center;
